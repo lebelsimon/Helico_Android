@@ -20,6 +20,7 @@ public class ControleJeu extends SurfaceView implements SurfaceHolder.Callback
     public static final int WIDTH = 856;
     public static final int HEIGHT = 480;
     public static final int MOVESPEED = -10;
+    public static int BEST = 0;
     private long smokeStartTime;
     private long missileStartTime;
     private MainThread thread;
@@ -43,7 +44,7 @@ public class ControleJeu extends SurfaceView implements SurfaceHolder.Callback
     private boolean reset;
     private boolean dissapear;
     private boolean started;
-    private int best;
+
 
 
 
@@ -376,9 +377,9 @@ public class ControleJeu extends SurfaceView implements SurfaceHolder.Callback
         joueur.resetScore();
         joueur.setY(HEIGHT/2);
 
-        if(joueur.getScore()>best)
+        if(joueur.getScore()>BEST)
         {
-            best = joueur.getScore();
+            BEST = joueur.getScore();
 
         }
 
@@ -421,8 +422,8 @@ public class ControleJeu extends SurfaceView implements SurfaceHolder.Callback
         paint.setColor(Color.WHITE);
         paint.setTextSize(30);
         paint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
-        canvas.drawText("DISTANCE: " + (joueur.getScore()*3), 10, HEIGHT - 10, paint);
-        canvas.drawText("BEST: " + best, WIDTH - 215, HEIGHT - 10, paint);
+        canvas.drawText("DISTANCE: " + joueur.getScore(), 10, HEIGHT - 10, paint);
+        canvas.drawText("BEST: " + BEST, WIDTH - 215, HEIGHT - 10, paint);
 
         if(!joueur.getPlaying()&&newGameCreated&&reset)
         {

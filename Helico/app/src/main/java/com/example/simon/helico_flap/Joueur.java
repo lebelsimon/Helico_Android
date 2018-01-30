@@ -40,6 +40,13 @@ public class Joueur extends ObjetJeu{
 
     public void update()
     {
+
+        if(score>ControleJeu.BEST)
+        {
+            ControleJeu.BEST = score;
+
+        }
+
         long elapsed = (System.nanoTime()-startTime)/1000000;
         if(elapsed>100)
         {
