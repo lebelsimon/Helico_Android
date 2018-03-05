@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "962819414843",
+    "firebase_url": "https://helicoflap-774ad.firebaseio.com",
+    "project_id": "helicoflap-774ad",
+    "storage_bucket": "helicoflap-774ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962819414843:android:ebae6fb2792f028b",
+        "android_client_info": {
+          "package_name": "fr.ecetech.plane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962819414843-dgunvc8ll0m05olr7s54qt1rjge3uhc1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.ecetech.plane",
+            "certificate_hash": "9a481a03fe53781390de9378695e7bee2ec8198e"
+          }
+        },
+        {
+          "client_id": "962819414843-8hilcpo6s5s3s6mlj2utjtji6atr3j85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYyX_iMhtAmWrQPKxAlVdFc1CQaY1rgzU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962819414843-8hilcpo6s5s3s6mlj2utjtji6atr3j85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
